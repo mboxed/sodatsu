@@ -11,3 +11,7 @@ function index() {
 function cannotFind(hash) {
 	return `<p>It looks like the page "${hash}" doesn't exist...`
 }
+
+function link(hash) {
+	return `<a href="#${hash}">${hash}</a>`
+}

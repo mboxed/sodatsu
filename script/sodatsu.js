@@ -1,6 +1,6 @@
 var md = window.markdownit({html: true, breaks: true});
 
-const fun = /\{(.*)\}/
+const interpolate = /\[\[(.*)\]\]/
 
 window.addEventListener('hashchange', function() {
 	loadPageFromHash(location.hash)
@@ -24,11 +24,13 @@ function loadPageFromHash(hash) {
 			var data = directory[transformedHash]
 		}
 
+		document.getElementsByTagName("title")[0].innerHTML = `育つ - ${transformedHash}`
 		document.getElementById("body").innerHTML = ""
 
 		data.forEach( function(e, i) {
-			if(fun.test(e)) {
-				document.getElementById("body").innerHTML += md.render(eval(e.match(fun)[1])) + "\n"
+			if(interpolate.test(e)) {
+				var match = e.match(interpolate)
+				document.getElementById("body").innerHTML += md.render(e.replace(match[0], eval(match[1]))) + "\n"
 			} else {
 				document.getElementById("body").innerHTML += md.render(e) + "\n"
 			}
