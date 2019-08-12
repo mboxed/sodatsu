@@ -1,0 +1,3 @@
+2019-08-05T18:50:58-04:00	 Hello everyone!
+2019-08-06T05:10:05-04:00	Thank you @<ckipp https://chronica.xyz/hallway.txt>!
+2019-08-07T19:19:22-04:00	@<ckipp https://chronica.xyz/hallway.txt> - you're absolutely right! using the official client now, really misunderstood timestamps yet again.
