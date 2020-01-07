@@ -16,7 +16,7 @@ var directory = {
 		"## 'to grow'",
 		"sodatsu is a personal wiki, and soon to be home of the time tracker [[link(\"shinka\")]].",
 		"The name sodatsu is based off of a simple affirmation: ",
-		"<div style=\"text-align:center;font-size: 3em;font-weight:bold;\"><ruby>私<rt>わたし</rt></ruby>は<ruby>育<rt>そだ</rt></ruby>つしたい。</div>",
+		"<div style=\"text-align:center;font-size: 3em;font-weight:bold;\"><ruby>私<rt>わたし</rt></ruby>は<ruby>育<rt>そだ</rt></ruby>ちたい。</div>",
 		"<div style=\"text-align:center;font-size: 1.5em;font-weight:bold;\">I want to grow.</div>",
 	],
 	"shinka": [
